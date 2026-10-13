@@ -1,0 +1,14 @@
+
+name: First CI Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  basic-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm workflow execution
+        run: echo "CI workflow executed successfully"
